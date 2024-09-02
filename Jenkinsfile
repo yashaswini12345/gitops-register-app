@@ -36,7 +36,7 @@ pipeline {
                    git commit -m "Updated Deployment Manifest"
                 """
                 withCredentials([gitUsernamePassword(credentialsId: 'github', gitToolName: 'Default')]) {
-                  sh "git push https://github.com/niroshaum/gitops-register-app main"
+                  sh "git push https://github.com/yashaswini12345/gitops-register-app main"
                 }
             }
         }
